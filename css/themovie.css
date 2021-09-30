@@ -6,13 +6,13 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: url(../pictures/background.png);
+    background: url(../img/background.png);
 }
 
 #banner {
     text-align: center;
     height: 50px;
-    background: url(../pictures/bannerbg.png);
+    background: url(../img/bannerbg.png);
 }
 
 #movie-name {
@@ -67,7 +67,7 @@ body {
     font-size: 48pt;
     display: flex;
     align-items: center;
-    background: url(../pictures/rbg.png);
+    background: url(../img/rbg.png);
 }
 
 #left-container .top,
