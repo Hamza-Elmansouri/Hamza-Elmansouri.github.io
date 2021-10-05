@@ -62,6 +62,10 @@ function filterLongWords(words,i) {
     return words.filter(word => word.length > i);
 }
 
+function sum(numbers) {
+    return numbers.map(n => n+1);
+}
+
 const a = [1,3,5,3,3]; 
 const b = a.map(function(elem, i, array) {
   return elem * 10;

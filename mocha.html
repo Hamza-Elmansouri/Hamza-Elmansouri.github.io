@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W2D1 Quiz</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // initialize mocha
+        mocha.setup('bdd');
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+
+    </script>
+
+    <script src="Functional Programming.js"></script>
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script>
+ 
+            describe('#sum()', function () {
+                it('should return 8 with [5,3] as parameters ', function () {
+                assert.equal(8, sum([5,3]));
+                });
+                
+            })
+
+            describe('#multiply()', function () {
+                it('should return 15 with [5,3] as parameters ', function () {
+                assert.equal(15, multiply([5,3]));
+                });
+                
+            })
+
+            describe('#reverseSrt()', function () {
+                it('should return "olleh" with "hello" as parameter ', function () {
+                assert.equal("olleh", reverseSrt("hello"));
+                });
+                
+            })
+
+            
+            describe('#filterLongWords()', function () {
+                it('should return "mohammed" with (["hamza","mohammed","adam"], 7) as parameter ', function () {
+                assert.equal("mohammed", filterLongWords(["hamza","mohammed","adam"], 7));
+                });
+                
+            })
+            mocha.run();
+
+    </script>
+</body>
+
+</html>
