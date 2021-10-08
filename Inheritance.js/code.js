@@ -1,8 +1,9 @@
 // Question 1:
 
 
-String.prototype.filter = function(str) {
-    return this.replace(str + "");
+String.prototype.filter = function(...words){
+      let arr = this.split(" ");
+      return arr.filter(a => !words.includes(a)).join(" ");
 };
 
 // Question 2:
