@@ -17,7 +17,6 @@ app.get('/', (req, res) => {
     } else {
         actcss = "day.css";
     }
-    console.log(hour);
     console.log('In the middleware!');
     res.send('<!DOCTYPE html>\n' +
         '<html lang="en">\n' +
